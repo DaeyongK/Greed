@@ -1,4 +1,4 @@
-
+//Jonathan
 abstract class GreedPlayer {
 	abstract String name();
 	public abstract int choose(GreedOption[] options, int[] dice, 
