@@ -13,13 +13,20 @@ public class KwonMeiSinghGreedStrategy extends GreedStrategy{
 				rollAgainOption = i;
 			}
 		}
-		if (maxPoints <= )
-		if (maxPoints <= 100 && dice.length > 4 && rollAgainOption >=0) {
-			return rollAgainOption;
-		} else if (dice.length == 2 && bank <=300) {
-			return 
+		if (maxPoints > 100) {
+			return maxPointsOption;
+		} else {
+			if (dice.length > 4 && rollAgainOption >=0) {
+				return rollAgainOption;
+			} else if (maxPoints == 100) {
+				return maxPointsOption;
+			}
 		}
-		
+		if (dice.length == 2 && bank <=300) {
+			return rollAgainOption;
+		} else {
+			return options.length+1;
+		}
 	}
 	public String playerName() {
 		return playerName() + "'s Strategy";
