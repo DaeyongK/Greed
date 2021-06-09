@@ -15,7 +15,9 @@ public class StrategyEvaluator {
 	}
 	
 	public static void main(String[] args) {
-		System.out.println(evaluateStrategy(new KwonMeiSinghGreedStrategy(), 1000000));
+		for (int i = 0; i < 20; i++) {
+			System.out.println(evaluateStrategy(new KwonMeiSinghGreedStrategy(), 10000));
+		}
 	}
 
 }
